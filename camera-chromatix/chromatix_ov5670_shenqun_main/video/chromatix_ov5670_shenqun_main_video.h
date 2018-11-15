@@ -887,8 +887,8 @@ Qualcomm Technologies Proprietary and Confidential.
       {
          7.200000f, /* Gain Start */
          8.000000f, /* Gain End */
-         270, /* Lux Index Start */
-         323, /* Lux Index End */
+         350, /* Lux Index Start */
+         380, /* Lux Index End */
       },
       /* A CCT Trigger */
       {
@@ -1003,9 +1003,9 @@ Qualcomm Technologies Proprietary and Confidential.
          1.7220f,    -0.4305f,    -0.2916f,
          -0.3038f,    1.4894f,    -0.1856f,
          -0.0297f,    -0.8730f,    1.9028f,*/
-         1.8060f,    -0.7778f,    -0.0282f,
-         -0.1742f,    1.2966f,    -0.1224f,
-         0.1272f,    -0.9082f,    1.7810f,
+         1.7060f,    -0.7278f,    0.0382f,
+         -0.2242f+0.1,   1.3466f+0.1,    -0.1224f-0.2,
+         0.2272f+0.1,    -0.8082f+0.1,    1.5810f-0.2,
          0,    0,    0,
          0
       },
@@ -1019,9 +1019,9 @@ Qualcomm Technologies Proprietary and Confidential.
       /* Noise Weight: 0.000000 */
       /* Saturation: Red - 1.000000, Green - 1.000000, Blue - 1.000000 */
       {
-         1.7060f,    -0.5778f,    -0.1282f,
-         -0.1742f,    1.2966f,    -0.1224f,
-         0.0272f,    -0.8082f,    1.7810f,
+         1.6060f,    -0.5278f,    -0.0782f,
+         -0.2742f+0.1,    1.3966f+0.1,    -0.1224f-0.2,
+         0.1272f+0.1,    -0.8082f+0.1,    1.6810f-0.2,
          0,    0,    0,
          0
       },
@@ -1029,9 +1029,9 @@ Qualcomm Technologies Proprietary and Confidential.
       /* Noise Weight: 0.000000 */
       /* Saturation: Red - 1.000000, Green - 1.000000, Blue - 1.000000 */
       {
-        1.10* 1.8777f,    1.10* -0.9586f,    1.10* 0.0809f,
-          1.10*-0.1662f,    1.10* 1.3684f,     1.10*-0.2022f,
-          1.10*-0.0042f,    1.10* -0.6016f,     1.10*1.6057f,
+        1.8777f,    -0.9586f,    0.0809f,
+        -0.1662f,    1.3684f,    -0.2022f,
+        -0.0042f,    -0.6016f,    1.6057f,
          0,    0,    0,
          0
       },
@@ -1047,9 +1047,9 @@ Qualcomm Technologies Proprietary and Confidential.
       },
       /* Outdoor Color Correction */
       {
-          1.10* 1.8777f,    1.10* -0.9586f,    1.10* 0.0809f,
-          1.10*-0.1662f,    1.10* 1.3684f,     1.10*-0.2022f,
-          1.10*-0.0042f,    1.10* -0.6016f,     1.10*1.6057f,
+          1.8777f,    -0.9586f,    0.0809f,
+          -0.1662f,    1.3684f,     -0.2022f,
+          -0.0042f,    -0.6016f,    1.6057f,
          0,    0,    0,
          0
       },
@@ -1259,8 +1259,8 @@ Qualcomm Technologies Proprietary and Confidential.
       {
          7.200000f, /* Gain Start */
          8.000000f, /* Gain End */
-         290, /* Lux Index Start */
-         323, /* Lux Index End */
+         350, /* Lux Index Start */
+         380, /* Lux Index End */
       },
       /* A CCT Trigger */
       {
@@ -5409,8 +5409,8 @@ Qualcomm Technologies Proprietary and Confidential.
       },
       /* CoolWhite AWB Reference Point */
       {
-         0.632000f, /* R/G ratio */
-         0.535000f, /* B/G ratio */
+         0.662000f, /* R/G ratio */
+         0.555000f, /* B/G ratio */
       },
       /* Horizon AWB Reference Point */
       {
@@ -5419,8 +5419,8 @@ Qualcomm Technologies Proprietary and Confidential.
       },
       /* D50 AWB Reference Point */
       {
-         0.582000f, /* R/G ratio */
-         0.610000f, /* B/G ratio */
+         0.652000f, /* R/G ratio */
+         0.590000f, /* B/G ratio */
       },
       /* Cust. Fluor. AWB Reference Point */
       {
@@ -5591,7 +5591,7 @@ Qualcomm Technologies Proprietary and Confidential.
 // a variety of heuristics. We do not recommend the user change these values.
 /*********************************************************************/
 
-   290, /* Indoor Index */
+   285, /* Indoor Index */
    185, /* Outdoor Index */
 
 /*********************************************************************/
@@ -5966,18 +5966,18 @@ Qualcomm Technologies Proprietary and Confidential.
    0.500000f, /* Cluster Low PEC */
    /* Weight Vector */
    {
-      {1, 10, 10, 5}, /* D65 */
-      {1, 10, 10, 5}, /* D75 */
-      {0, 0, 1, 8}, /* A */
-      {0, 0, 5, 10}, /* Warm Fluorescent */
-      {0, 0, 3, 10}, /* Cool Fluorescent */
+      {1, 10, 10, 10}, /* D65 */
+      {1, 10, 10, 10}, /* D75 */
+      {0, 0, 1, 0}, /* A */
+      {0, 0, 2, 1}, /* Warm Fluorescent */
+      {0, 0, 3, 2}, /* Cool Fluorescent */
       {0, 0, 1, 2}, /* Horizon */
-      {1, 1, 2, 2}, /* D50 */
-      {0, 0, 3, 8}, /* Custom Fluorescent */
-      {2, 2, 1, 1}, /* Noon */
-      {1, 1, 3, 6}, /* Custom Daylight */
-      {0, 0, 1, 8}, /* Custom A */
-      {0, 0, 1, 8}, /* U30 */
+      {1, 1, 15, 20}, /* D50 */
+      {0, 0, 3, 2}, /* Custom Fluorescent */
+      {2, 2, 1, 5}, /* Noon */
+      {1, 1, 3, 10}, /* Custom Daylight */
+      {0, 0, 1, 4}, /* Custom A */
+      {0, 0, 1, 4}, /* U30 */
       {8, 9, 8, 3}, /* Daylight Hybrid 1 */
       {1, 5, 10, 5}, /* Daylight Hybrid 2 */
       {0, 0, 2, 3}, /* A Line 1 */
@@ -6774,7 +6774,7 @@ Qualcomm Technologies Proprietary and Confidential.
 
    /* AEC Bright Region */
    {
-      0, /* Is Supported  */
+      1, /* Is Supported  */
       0.500000f, /* Reduction */
       216, /* Threshold Low */
       135, /* Lux Index Low */
@@ -7281,11 +7281,11 @@ Qualcomm Technologies Proprietary and Confidential.
 /******************************************************************************/
 
       1, /* Enable */
-      0.650000f, /* Weight */
+      0.850000f, /* Weight */
       0.300000f, /* Dark Skin Ratio */
       0.700000f, /* Light Skin Ratio */
-      40, /* Dark Skin Luma Target */
-      60, /* Light Skin Luma Target */
+      48, /* Dark Skin Luma Target */
+      70, /* Light Skin Luma Target */
    },
 
 /******************************************************************************/

@@ -1019,7 +1019,7 @@ Qualcomm Technologies Proprietary and Confidential.
       /* Noise Weight: 0.000000 */
       /* Saturation: Red - 1.000000, Green - 1.000000, Blue - 1.000000 */
       {
-         1.6060f,    -0.5278f,    -0.0782f,
+         1.6060f-0.05,    -0.5278f+0.025,    -0.0782f+0.025,
          -0.2742f+0.1,    1.3966f+0.1,    -0.1224f-0.2,
          0.1272f+0.1,    -0.8082f+0.1,    1.6810f-0.2,
          0,    0,    0,
@@ -1029,9 +1029,9 @@ Qualcomm Technologies Proprietary and Confidential.
       /* Noise Weight: 0.000000 */
       /* Saturation: Red - 1.000000, Green - 1.000000, Blue - 1.000000 */
       {
-        1.8777f,    -0.9586f,    0.0809f,
-        -0.1662f,    1.3684f,    -0.2022f,
-        -0.0042f,    -0.6016f,    1.6057f,
+        1.8777f-0.1,    -0.9586f+0.05,    0.0809f+0.05,
+        -0.1662f+0.1,    1.3684f-0.1,    -0.2022f,
+        -0.0042f+0.1,    -0.6016f,    1.6057f-0.1,
          0,    0,    0,
          0
       },
@@ -1352,13 +1352,13 @@ Qualcomm Technologies Proprietary and Confidential.
       {
          {
            /* a_m, a_p */
-            0.4721f, 0.4821f,
+            0.5321f, 0.4821f,
             /* b_m, b_p */
-            -0.3504f, -0.3504f,
+            -0.3504f, -0.4504f,
             /* c_m, c_p */
             0.4721f, 0.4921f,
             /* d_m, d_p */
-            -0.1379f, -0.1379f,
+            -0.2379f, -0.1379f,
             /* k_cb, k_cr */
             128, 128
          },
@@ -1373,13 +1373,13 @@ Qualcomm Technologies Proprietary and Confidential.
       {
          {
             /* a_m, a_p */
-            0.4500f, 0.4500f,
+            0.5000f, 0.4500f,
             /* b_m, b_p */
-            -0.3467f, -0.3467f,
+            -0.3467f, -0.4467f,
             /* c_m, c_p */
             0.4500f, 0.4500f,
             /* d_m, d_p */
-            -0.2324f, -0.2324f,
+            -0.3324f, -0.2324f,
             /* k_cb, k_cr */
             128, 128
          },
@@ -5972,7 +5972,7 @@ Qualcomm Technologies Proprietary and Confidential.
       {0, 0, 2, 1}, /* Warm Fluorescent */
       {0, 0, 3, 2}, /* Cool Fluorescent */
       {0, 0, 1, 2}, /* Horizon */
-      {1, 1, 15, 20}, /* D50 */
+      {1, 1, 10, 10}, /* D50 */
       {0, 0, 3, 2}, /* Custom Fluorescent */
       {2, 2, 1, 5}, /* Noon */
       {1, 1, 3, 10}, /* Custom Daylight */
